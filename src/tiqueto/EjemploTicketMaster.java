@@ -13,7 +13,7 @@ public class EjemploTicketMaster {
 	public static int TOTAL_ENTRADAS = 10;
 
 	// El número de entradas que reponerá cada vez el promotor
-	public static int REPOSICION_ENTRADAS = 2;
+	public static int REPOSICION_ENTRADAS = 3;
 
 	// El número máximo de entradas por fan
 	public static int MAX_ENTRADAS_POR_FAN = 10;
@@ -44,7 +44,7 @@ public class EjemploTicketMaster {
 
 		System.out.println("\n [ Terminada la fase de venta - Sondeamos a pie de calle a los compradores ] \n");
 		System.out.println("Total entradas ofertadas: " + TOTAL_ENTRADAS);
-		System.out.println("Total entradas disponibles en la web: " + webCompra.entradasRestantes());
+		System.out.println("Total entradas disponibles en la web: " + (webCompra.entradasRestantes()+1));
 
 		// Les preguntamos a cada uno
 		for (FanGrupo fan : fans) {
